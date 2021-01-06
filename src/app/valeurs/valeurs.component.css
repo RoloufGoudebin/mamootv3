@@ -5,19 +5,23 @@ h1 {
     font-family: 'Bungee Shade', cursive;
     padding-top: 5%;
   }
-  
+
   .valeur {
-    padding-top: 25%
+    padding-top: 5%
   }
-  
-  
+
+  .methode {
+  padding-top: 30%;
+  }
+
+
   a{
   width: 3%;
-  
-  
+
+
   }
-  
-  
+
+
   h2 {
     text-transform: uppercase;
     text-align: center;
@@ -25,21 +29,21 @@ h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
     padding-top: 5%;}
-  
-  
+
+
   h3 {
     text-transform: uppercase;
     text-align: center;
     color: black;
     font-family: 'Bungee Shade', cursive;
     font-size: 1.5em;}
-  
+
   h4 {
     color: black;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.4em;
-    padding-top: 8%;}
-  
+    padding-top: 4%;}
+
   ul {
     font-family: 'Quicksand', sans-serif;
     font-size: 1em;}
@@ -50,46 +54,45 @@ h1 {
     color: black;
     font-style: bold;
   }
-  
+
   #id_rob {
     background: url("/assets/img/Rob.png");
     background-size: 70%;
     background-position: left -10px bottom 0px;
     background-repeat: no-repeat;
   }
-  
+
   #id_thom {
     background: url("/assets/img/thom.png");
     background-size: 70%;
     background-position: left -70px bottom 0px;
     background-repeat: no-repeat;
   }
-  
+
   #id_team {
     background: url("/assets/img/team.jpg");
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: left 0px bottom 0px;
   }
-  
-  
-  
+
+
+
   hr {
     border-top: 3px solid #ABDDDE;
     width: 50px;
   }
-  
+
   hr.empty {
     height:15px;
     border-top: 0;
   }
-  
-  
+
+
   li {
     text-align: justify;
   }
-  
+
   li.list-group-item {
     text-align: center !important;
   }
-  
