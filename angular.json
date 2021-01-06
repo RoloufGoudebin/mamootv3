@@ -25,7 +25,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/css/bootstrap.min.css"
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/icon/icomoon/style.css"
             ],
             "scripts": [
               "src/assets/js/jquery.min.js",
