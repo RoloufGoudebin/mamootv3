@@ -12,7 +12,7 @@
                     </small>
                     <input [class.is-invalid]="form.get('name').invalid && form.get('name').touched"
                         [class.is-valid]="form.get('name').valid && form.get('name').touched" id="name"
-                        class="text form-control" type="text" placeholder="NOM" formControlName="name">
+                        class="text form-control" type="text" placeholder="NOM" formControlName="name" label="nom">
 
 
                     <small *ngIf="email.errors?.required && form.get('email').touched" class="text-danger">Une adresse
@@ -23,7 +23,7 @@
 
                     <input [class.is-invalid]="form.get('email').invalid && form.get('email').touched"
                         [class.is-valid]="form.get('email').valid && form.get('email').touched" id="email"
-                        class="text form-control" placeholder="E-MAIL" formControlName="email">
+                        class="text form-control" placeholder="E-MAIL" formControlName="email" label="email">
 
                         <small *ngIf="form.get('message').invalid && form.get('message').touched" class="text-danger">Un message est
                             requis
@@ -31,7 +31,7 @@
                     <textarea [class.is-invalid]="form.get('message').invalid && form.get('message').touched"
                         [class.is-valid]="form.get('message').valid && form.get('message').touched" id="message"
                         class="text form-control" type="text" placeholder="MESSAGE"
-                        formControlName="message"></textarea>
+                        formControlName="message" label="message"></textarea>
 
 
                     <button id="submit" [ngClass]="{'disabled': formIsValid === false}" class="text form-control"
