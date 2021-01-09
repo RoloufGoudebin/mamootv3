@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,7 +33,8 @@ import { ContactComponent } from './contact/contact.component';
     HttpClientModule
   ],
   providers: [
-    Title
+    Title,
+    Meta
   ],
   bootstrap: [AppComponent]
 })
