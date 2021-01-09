@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
 
     this.meta.addTags([
       { name: 'go:site_name', content: 'Mamoot' },
+      { name: 'go:url', content: 'https://mamoot.be' },
       { name: 'go:locale', content: 'fr_be' },
       { name: 'go:type', content: 'sebsite' },
       { name: 'go:description', content: 'Créations de solutions digitales, stratégie de communication et bien plus encore !' },
