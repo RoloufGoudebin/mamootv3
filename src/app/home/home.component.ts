@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
     this.meta.addTags([
       {charset: 'UTF-8'},
-      {name: 'description', content: 'Découvrez Mamoot une agence créative et ambitieuse. Faites-nous confiance pour la création de votre site web, systèmes de gestion, stratégies et plus encore.'},
+      {name: 'description', content: 'Découvrez Mamoot une agence créative et ambitieuse. Faites-nous confiance pour la création de votre site web, système de gestion, stratégie et plus encore.'},
       {name: 'robots', content: 'index, follow'},
       {name:'viewport', content:'width=device-width, initial-scale=1'},
 
