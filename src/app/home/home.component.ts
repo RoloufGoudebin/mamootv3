@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
       {property: 'go:url', content: 'https://www.mamoot.be' },
       {property: 'go:locale', content: 'fr_be' },
       {property: 'go:type', content: 'sebsite' },
-      {property: 'go:description', content: 'Créations de solutions digitales, stratégie de communication et bien plus encore !' },
+      {property: 'go:description', content: 'Découvrez Mamoot une agence créative et ambitieuse. Faites-nous confiance pour faire évoluer vos solutions digitales et votre image.' },
       {property: 'go:image', content: 'https://www.mamoot.be/assets/img/Mamoot.png' }
     ], true);
   }
