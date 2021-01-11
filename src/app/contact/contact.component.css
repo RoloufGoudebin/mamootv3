@@ -26,6 +26,11 @@
 
 }
 
+.contact-form{
+  background-image: url('/assets/img/mail.png');
+  background-size: cover;
+}
+
 
 .contact-header {
   color: white;
@@ -44,7 +49,7 @@
   padding: 20px 0;
   color: #444;
 }
-.header h1 {
+h1 {
   padding-top: 15px;
   font-weight: normal;
   font-family: 'Bungee Shade', cursive;
@@ -53,6 +58,8 @@
   margin-top: 10px;
   font-weight: 300;
   font-size: 15px;
+}
+.form-fields{
 }
 
 .address, .email, .phone {
@@ -102,9 +109,7 @@ form textarea {
     font-family: 'Quicksand', sans-serif;
 }
 
-.contact-form {
-  padding-bottom: 40px;
-}
+
 
 /* Layout Stuff */
 
@@ -112,8 +117,6 @@ section {
   background-color: #9ac7ca;
   background-repeat: repeat;
   padding: 1%;
-
-
 }
 
 
@@ -141,9 +144,6 @@ background-size:auto;
   grid-area: contact-us;
 }
 
-.header {
-  grid-area: header;
-}
 
 .address {
   grid-area: address;
@@ -159,4 +159,13 @@ background-size:auto;
 
 .contact-form {
   grid-area: contact-form;
+}
+
+hr {
+  border-top: 3px solid #ABDDDE;
+  width: 50px;
+}
+
+p, h2 {
+  font-family: 'Quicksand', sans-serif;
 }
