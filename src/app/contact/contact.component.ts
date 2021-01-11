@@ -46,7 +46,7 @@ export class ContactComponent implements OnInit {
     console.log(this.formIsValid)
 
 
-    this.http.post("https://mamoot.be/sendmail", user).subscribe(
+    /*this.http.post("https://mamoot.be/sendmail", user).subscribe(
       data => {
         let res: any = data;
         console.log(
@@ -57,7 +57,7 @@ export class ContactComponent implements OnInit {
         console.log(err);
       }, () => {
       }
-    );
+    );*/
   }
 
   get email() {

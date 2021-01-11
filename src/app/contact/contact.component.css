@@ -18,7 +18,6 @@
 
 .contact-us {
   position: relative;
-  width: 250px;
   background-image: url('/assets/img/mail.png');
   background-size: cover;
   background-position: center;
@@ -32,13 +31,7 @@
 }
 
 
-.contact-header {
-  color: white;
-  position: absolute;
-  transform: rotate(-90deg);
-  top: 120px;
-  left: -40px;
-}
+
 .contact-header h1 {
   font-size: 1.5rem;
 }
@@ -130,37 +123,6 @@ background-size:auto;
 
 }
 
-
-
-.contact-form-container {
-  width: 800px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr 2fr;
-  grid-template-areas: "contact-us header header header" "contact-us address phone email" "contact-us contact-form contact-form contact-form";
-}
-
-.contact-us {
-  grid-area: contact-us;
-}
-
-
-.address {
-  grid-area: address;
-}
-
-.phone {
-  grid-area: phone;
-}
-
-.email {
-  grid-area: email;
-}
-
-.contact-form {
-  grid-area: contact-form;
-}
-
 hr {
   border-top: 3px solid #ABDDDE;
   width: 50px;
@@ -168,4 +130,12 @@ hr {
 
 p, h2 {
   font-family: 'Quicksand', sans-serif;
+}
+
+
+.centerModal{
+  position: fixed;
+  width: 400px;
+  left: calc( 50% - 200px);
+  top: 50%;
 }
