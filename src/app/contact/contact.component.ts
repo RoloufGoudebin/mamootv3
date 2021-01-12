@@ -49,7 +49,7 @@ export class ContactComponent implements OnInit {
     console.log(form.message);
 
 
-    this.http.post("https://www.mamoot.be/sendmail", user).subscribe(
+    this.http.post("https://mamoot.be/sendmail", user).subscribe(
       data => {
         let res: any = data;
         console.log(
