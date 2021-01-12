@@ -18,7 +18,7 @@
 
 .contact-us {
   position: relative;
-  background-image: url('/assets/img/mail.png');
+  background-image: url('/assets/img/mail.jpg');
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -26,7 +26,7 @@
 }
 
 .contact-form{
-  background-image: url('/assets/img/mail.png');
+  background-image: url('/assets/img/mail.jpg');
   background-size: cover;
 }
 
@@ -105,9 +105,10 @@ form textarea {
 /* Layout Stuff */
 
 section {
-  background-color: #9ac7ca;
-  background-repeat: repeat;
-  padding: 1%;
+  background-image: url("/assets/img/agency_bg2.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -126,8 +127,14 @@ hr {
   width: 50px;
 }
 
-p, h2 {
+p {
   font-family: 'Quicksand', sans-serif;
+}
+
+h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 23px;
+
 }
 
 
@@ -136,4 +143,8 @@ p, h2 {
   width: 400px;
   left: calc( 50% - 200px);
   top: 30%;
+}
+
+a:link {
+  color: #9AC6C9;
 }
