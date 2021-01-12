@@ -57,22 +57,24 @@
           <div class="col-10 col-lg-4 mx-auto text-center my-auto shadow-sm rounded py-5"
             style="background-color: white;">
             <div class="my-auto">
-              <h3 class="mb-2">Notre adresse</h3>
+              <h2 class="mb-2">Notre adresse</h2>
               <p>Avenue des sorbiers</p>
               <p>1410 Waterloo</p>
               <hr class="mx-auto my-3">
-              <h3 class="mb-2">Numéro de Téléphone</h3>
+              <h2 class="mb-2">Notre téléphone</h2>
               <p><a href="tel:+32486260685">0486/26.06.85</a></p>
               <hr class="mx-auto my-3">
-              <h3 class="mb-2">Mail</h3>
-              <p><a href="mailto:info@mamoot.be">info@mamoot.be</a></p>
+              <h2 class="mb-2">Notre mail</h2>
+              <p><a href="mailto:info@mamoot.be">hello@mamoot.be</a></p>
             </div>
           </div>
 
 
+
+
           <div class="form-fields mx-auto order-lg-last order-first col-10 col-lg-6">
             <form id="form" class="topBefore py-5 my-5" [formGroup]="form">
-              <h1 class="text-center">Contactez-nous</h1>
+              <h2 class="text-center">Contactez-nous</h2>
               <hr class="mx-auto mt-3">
 
               <small *ngIf="form.get('name').invalid && form.get('name').touched" class="text-danger">Un nom est
@@ -108,7 +110,7 @@
 
             </form>
           </div>
-          
+
         </div>
         <div class="modal fade centerModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
