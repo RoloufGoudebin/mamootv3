@@ -55,6 +55,9 @@
   
     width: 55px;
     height: 55px;
-  
+  }
+
+  .disabled{
+    background-color: red !important;
   }
   

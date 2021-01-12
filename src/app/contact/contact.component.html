@@ -1,97 +1,131 @@
-
-<section>
-<div class="contact-form-container">
-    <div class="contact-us">
-      <div class="contact-header">
-        <h1>
-          &#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;CONTACTEZ-NOUS
-        </h1>
-      </div>
-
-    </div>
-    <div class="header">
-      <h1>
-        En imposer ?
-      </h1>
-      <h2> Des questions, un devis, une carte postale ? </h2>
-    </div>
-    <div class="contact-form">
-      <form>
-        <input placeholder="Name" type="text" /><input placeholder="Email" type="email" /><textarea placeholder="Parlez-nous de votre projet..." rows="4"></textarea><button type="button" class="btn btn-green">
-        ENVOYER</button>
-      </form>
-    </div>
-    <div class="address">
-
-      <h3>
-        1410 Waterloo
-      </h3>
-      <h3>
-        Avenue des Sorbiers
-      </h3>
-    </div>
-    <div class="email">
-      <h3>
-        hello@mamoot.be
-      </h3>
-    </div>
-  </div>
-  <div class="img"> </div>
-
-</section>
-
-
-
-
-
-
-
-
 <!--
 
-<div class="background">
-    <header>Contactez-nous</header>
-    <p>Des questions, un devis, une carte postale?</p>
+<div class="bg-contact2" style="background-image: url('images/bg-01.jpg');">
+  <div class="container-contact2">
+    <div class="wrap-contact2">
+      <form class="contact2-form validate-form">
+        <span class="contact2-form-title">
+          Contact Us
+        </span>
 
-    <div class="container">
-        <div class="row">
-            <div class="mx-auto mt-lg-5">
-                <form id="form" class="topBefore" [formGroup]="form">
-
-                    <small *ngIf="form.get('name').invalid && form.get('name').touched" class="text-danger">Un nom est
-                        requis
-                    </small>
-                    <input [class.is-invalid]="form.get('name').invalid && form.get('name').touched"
-                        [class.is-valid]="form.get('name').valid && form.get('name').touched" id="name"
-                        class="text form-control" type="text" placeholder="NOM" formControlName="name" label="nom">
-
-
-                    <small *ngIf="email.errors?.required && form.get('email').touched" class="text-danger">Une adresse
-                        email
-                        est requise</small>
-                    <small *ngIf="email.errors?.pattern" class="text-danger">Please provide a valid email
-                        address</small>
-
-                    <input [class.is-invalid]="form.get('email').invalid && form.get('email').touched"
-                        [class.is-valid]="form.get('email').valid && form.get('email').touched" id="email"
-                        class="text form-control" placeholder="E-MAIL" formControlName="email" label="email">
-
-                        <small *ngIf="form.get('message').invalid && form.get('message').touched" class="text-danger">Un message est
-                            requis
-                        </small>
-                    <textarea [class.is-invalid]="form.get('message').invalid && form.get('message').touched"
-                        [class.is-valid]="form.get('message').valid && form.get('message').touched" id="message"
-                        class="text form-control" type="text" placeholder="MESSAGE"
-                        formControlName="message" label="message"></textarea>
-
-
-                    <button id="submit" [ngClass]="{'disabled': formIsValid === false}" class="text form-control"
-                        type="submit" value="GO!" (click)="register()">GO!</button>
-
-                </form>
-            </div>
-
+        <div class="wrap-input2 validate-input" data-validate="Name is required">
+          <input class="input2" type="text" name="name">
+          <span class="focus-input2" data-placeholder="NAME"></span>
         </div>
+
+        <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+          <input class="input2" type="text" name="email">
+          <span class="focus-input2" data-placeholder="EMAIL"></span>
+        </div>
+
+        <div class="wrap-input2 validate-input" data-validate = "Message is required">
+          <textarea class="input2" name="message"></textarea>
+          <span class="focus-input2" data-placeholder="MESSAGE"></span>
+        </div>
+
+        <div class="container-contact2-form-btn">
+          <div class="wrap-contact2-form-btn">
+            <div class="contact2-form-bgbtn"></div>
+            <button class="contact2-form-btn">
+              Send Your Message
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
 </div>
 -->
+
+
+
+<section class="contact">
+
+  <div class="background fullheight">
+
+    <div class="container mx-auto pt-5 mt-5 my-5 py-5">
+      <div class="contact-form">
+        <div class="row mx-auto mt-5 pt-5">
+          <div class="header mx-auto text-center col-8">
+            <h1>En Imposer ?</h1>
+            <p>Des questions, un devis, une carte postale?</p>
+          </div>
+        </div>
+        <div class="row mx-auto mb-5 pb-5">
+
+
+          <div class="col-10 col-lg-4 mx-auto text-center my-auto shadow-sm rounded py-5"
+            style="background-color: white;">
+            <div class="my-auto">
+              <h3 class="mb-2">Notre adresse</h3>
+              <p>Avenue des sorbiers</p>
+              <p>1410 Waterloo</p>
+              <hr class="mx-auto my-3">
+              <h3 class="mb-2">Numéro de Téléphone</h3>
+              <p><a href="tel:+32486260685">0486/26.06.85</a></p>
+              <hr class="mx-auto my-3">
+              <h3 class="mb-2">Mail</h3>
+              <p><a href="mailto:info@mamoot.be">info@mamoot.be</a></p>
+            </div>
+          </div>
+
+
+          <div class="form-fields mx-auto order-lg-last order-first col-10 col-lg-6">
+            <form id="form" class="topBefore py-5 my-5" [formGroup]="form">
+              <h1 class="text-center">Contactez-nous</h1>
+              <hr class="mx-auto mt-3">
+
+              <small *ngIf="form.get('name').invalid && form.get('name').touched" class="text-danger">Un nom est
+                requis
+              </small>
+              <input [class.is-invalid]="form.get('name').invalid && form.get('name').touched"
+                [class.is-valid]="form.get('name').valid && form.get('name').touched" id="name"
+                class="text form-control" type="text" placeholder="NOM" formControlName="name" label="nom">
+
+
+              <small *ngIf="email.errors?.required && form.get('email').touched" class="text-danger">Une adresse
+                email
+                est requise</small>
+              <small *ngIf="email.errors?.pattern" class="text-danger">Please provide a valid email
+                address</small>
+
+              <input [class.is-invalid]="form.get('email').invalid && form.get('email').touched"
+                [class.is-valid]="form.get('email').valid && form.get('email').touched" id="email"
+                class="text form-control" placeholder="E-MAIL" formControlName="email" label="email">
+
+              <small *ngIf="form.get('message').invalid && form.get('message').touched" class="text-danger">Un message
+                est
+                requis
+              </small>
+              <textarea [class.is-invalid]="form.get('message').invalid && form.get('message').touched"
+                [class.is-valid]="form.get('message').valid && form.get('message').touched" id="message"
+                class="text form-control" type="text" rows=4 placeholder="MESSAGE" formControlName="message"
+                label="message"></textarea>
+
+
+                <button id="submit" [disabled]="!formIsValid" class="text form-control"
+                type="submit" value="GO!" (click)="register()">GO!</button>
+
+            </form>
+          </div>
+          
+        </div>
+        <div class="modal fade centerModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                  Votre message a bien été envoyé!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
