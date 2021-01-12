@@ -5,6 +5,7 @@ import { SolutionsComponent } from './solutions/solutions.component';
 import { ValeursComponent } from './valeurs/valeurs.component';
 import { EnvironnementComponent } from './environnement/environnement.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'valeurs', component: ValeursComponent},
   { path: 'environnement', component: EnvironnementComponent},
   { path: 'contact', component: ContactComponent},
+  { path: 'footer', component: FooterComponent },
 ];
 
 @NgModule({
