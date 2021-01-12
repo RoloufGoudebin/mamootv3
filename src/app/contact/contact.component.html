@@ -53,10 +53,11 @@
         </div>
         <div class="row mx-auto mb-5 pb-5">
 
-
+          
           <div class="col-10 col-lg-4 mx-auto text-center my-auto shadow-sm rounded py-5"
             style="background-color: white;">
             <div class="my-auto">
+              <img src="assets/img/woman_contact.png" class="madame_photo img-fluid">
               <h2 class="mb-2">Notre adresse</h2>
               <p>Avenue des sorbiers</p>
               <p>1410 Waterloo</p>
@@ -105,28 +106,28 @@
                 label="message"></textarea>
 
 
-                <button id="submit" [disabled]="formIsValid" class="text form-control"
-                type="submit" value="GO!" (click)="register()" data-target="#exampleModalLabel">GO!</button>
+              <button id="submit" [disabled]="!formIsValid" class="text form-control" type="submit" value="GO!"
+                (click)="register()" data-target="#exampleModalLabel">GO!</button>
 
             </form>
           </div>
 
         </div>
-        <div class="modal fade centerModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                </div>
-                <div class="modal-body">
-                  Votre message a bien été envoyé!
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Fermer</button>
-                </div>
+        <div class="modal fade centerModal" id="exampleModal" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>
+              <div class="modal-body">
+                Votre message a bien été envoyé!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Fermer</button>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>

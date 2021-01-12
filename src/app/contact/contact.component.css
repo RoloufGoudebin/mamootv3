@@ -148,3 +148,10 @@ h2{
 a:link {
   color: #9AC6C9;
 }
+
+.madame_photo{
+  z-index: 9;
+  position: absolute;
+  top: -135px;
+  left: 
+}
