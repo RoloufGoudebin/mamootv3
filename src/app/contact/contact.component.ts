@@ -43,14 +43,17 @@ export class ContactComponent implements OnInit {
       message: form.message
     }
 
-    console.log(this.formIsValid)
+    console.log(this.formIsValid);
+    console.log(form.name);
+    console.log(form.email);
+    console.log(form.message);
 
 
-    this.http.post("https://mamoot.be/sendmail", user).subscribe(
+    this.http.post("https://www.mamoot.be/sendmail", user).subscribe(
       data => {
         let res: any = data;
         console.log(
-          `👏 > 👏 > 👏 > 👏 ${user} is successfully register and mail has been sent and the message id is ${res.messageId}`
+          `👏 > 👏 > 👏 > 👏 Le message a bien été envoyé!`
         );
       },
       err => {
@@ -61,19 +64,19 @@ export class ContactComponent implements OnInit {
   }
 
   get email() {
-    return this.form.get('email')
+    return this.form.get('email');
   }
 
   get name() {
-    return this.form.get('email')
+    return this.form.get('email');
   }
 
   get message() {
-    return this.form.get('email')
+    return this.form.get('email');
   }
 
   get formIsValid(){
-    return this.form.valid
+    return this.form.valid;
   }
 
 }
