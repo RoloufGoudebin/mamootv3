@@ -43,7 +43,7 @@ export class ContactComponent implements OnInit {
       message: form.message
     }
 
-    console.log(this.formIsValid)
+    console.log(this.formIsValid);
 
 
     this.http.post("https://mamoot.be/sendmail", user).subscribe(

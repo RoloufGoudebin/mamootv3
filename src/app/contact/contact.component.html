@@ -99,12 +99,12 @@
               </small>
               <textarea [class.is-invalid]="form.get('message').invalid && form.get('message').touched"
                 [class.is-valid]="form.get('message').valid && form.get('message').touched" id="message"
-                class="text form-control" type="textarea" rows=4 placeholder="MESSAGE" formControlName="message"
+                class="text form-control" type="text" rows=4 placeholder="MESSAGE" formControlName="message"
                 label="message"></textarea>
 
 
               <button id="submit" [disabled]="!formIsValid" class="text form-control" type="submit" value="GO!"
-                (click)="register()" data-toggle="modal" data-target="#exampleModal" >GO!</button>
+                (click)="register()">GO!</button>
 
             </form>
           </div>
