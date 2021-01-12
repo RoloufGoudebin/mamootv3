@@ -103,7 +103,7 @@
                 label="message"></textarea>
 
 
-                <button id="submit" [ngClass]="{'disabled': formIsValid === false}" class="text form-control"
+                <button id="submit" [disabled]="!formIsValid" class="text form-control"
                 type="submit" value="GO!" (click)="register()">GO!</button>
 
             </form>
