@@ -20,11 +20,11 @@ export class AppComponent implements OnInit {
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       
-      { name: 'go:site_name', content: 'Mamoot' },
-      { name: 'go:locale', content: 'fr_be' },
-      { name: 'go:type', content: 'website' },
-      { name: 'go:description', content: 'Créations de solutions digitales, stratégies de communication et bien plus encore !' },
-      { name: 'go:image', content: 'https://www.mamoot.be/assets/img/Mamoot.png' }
+      { name: 'og:site_name', content: 'Mamoot' },
+      { name: 'og:locale', content: 'fr_be' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:description', content: 'Créations de solutions digitales, stratégies de communication et bien plus encore !' },
+      { name: 'og:image', content: 'https://www.mamoot.be/assets/img/Mamoot.png' }
     ], true);
   }
 

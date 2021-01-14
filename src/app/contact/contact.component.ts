@@ -19,8 +19,8 @@ export class ContactComponent implements OnInit {
     this.titleService.setTitle("Nous contacter | Mamoot");
 
     this.meta.updateTag({ name: 'description', content: 'Contactez pour nous parler de votre projet digital, de votre marketing digital, ...' }, "name='description'");
-    this.meta.updateTag({ name: 'go:url', content: 'https://www.mamoot.be/contact, ...' }, "name='go-url'");
-    this.meta.updateTag({ name: 'go:description', content: 'Contactez nous pour parler de votre projet digital :' }, "name='go-description'");
+    this.meta.updateTag({ name: 'og:url', content: 'https://www.mamoot.be/contact, ...' }, "name='og-url'");
+    this.meta.updateTag({ name: 'og:description', content: 'Contactez nous pour parler de votre projet digital :' }, "name='og-description'");
   }
 
   form = new FormGroup({

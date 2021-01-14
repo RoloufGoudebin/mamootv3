@@ -14,8 +14,8 @@ export class ValeursComponent implements OnInit {
     this.titleService.setTitle("Une agence digitale de qualité | Mamoot");
 
     this.meta.updateTag({ name: 'description', content: 'Découvrez nos valeurs et notre méthode de travail. Notre ADN qui pourrait rendre votre site internet unique et qualitatif' }, "name='description'");
-    this.meta.updateTag({ name: 'go:url', content: 'https://www.mamoot.be/valeurs' }, "name='go-url'");
-    this.meta.updateTag({ name: 'go:description', content: 'Découvrez notre ADN Mamoot. Nos valeurs, notre méthode et nos critères de qualité.' }, "name='go-description'");
+    this.meta.updateTag({ name: 'og:url', content: 'https://www.mamoot.be/valeurs' }, "name='og-url'");
+    this.meta.updateTag({ name: 'og:description', content: 'Découvrez notre ADN Mamoot. Nos valeurs, notre méthode et nos critères de qualité.' }, "name='og-description'");
 
   }
   

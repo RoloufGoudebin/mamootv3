@@ -14,9 +14,10 @@ export class SolutionsComponent implements OnInit {
   ngOnInit(): void {
     this.titleService.setTitle("6 solutions digitales pour votre entreprise | Mamoot");
 
+
     this.meta.updateTag({ name: 'description', content: 'Mamoot répond à tous vos besoins digitaux: SEO, SEA, sites internet, ERP, CRM, audits, réseaux sociaux et plus encore' }, "name='description'");
-    this.meta.updateTag({ name: 'go:url', content: 'https://www.mamoot.be/solutions' }, "name='go-url'");
-    this.meta.updateTag({ name: 'go:description', content: 'Découvrez les gestes quotidiens de Mamoot servant à limiter notre impact environnemental' }, "name='go-description'");
+    this.meta.updateTag({ name: 'og:url', content: 'https://www.mamoot.be/solutions' }, "name='og-url'");
+    this.meta.updateTag({ name: 'og:description', content: 'Découvrez nos solutions digitales. Faites-nous confiance pour faire évoluer vos solutions digitales et votre image.' }, "name='og-description'");
 
   }
 }
