@@ -1,7 +1,7 @@
 import { Component, OnInit, setTestabilityGetter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, Validators, FormGroup, Form } from "@angular/forms";
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 
 @Component({
@@ -11,11 +11,29 @@ import { Title } from '@angular/platform-browser';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(public http: HttpClient, private titleService:Title) { 
+  constructor(public http: HttpClient, private titleService:Title,  private meta:Meta) {
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle("Contact");
+    this.titleService.setTitle("Nous contacter | Mamoot");
+  }
+
+  this.titleService.setTitle("6 solutions digitales pour votre entreprise | Mamoot");
+
+    this.meta.addTags([
+      {charset: 'UTF-8'},
+      {name: 'language' , content:"fr-BE"},
+      {name: 'description', content: 'Contactez pour nous parler de votre projet digital, de votre marketing digital, ...'},
+      {name: 'robots', content: 'index, follow'},
+      {name:'viewport', content:'width=device-width, initial-scale=1'},
+
+      {property: 'go:site_name', content: 'Mamoot' },
+      {property: 'go:url', content: 'https://www.mamoot.be/contact' },
+      {property: 'go:locale', content: 'fr_be' },
+      {property: 'go:type', content: 'sebsite' },
+      {property: 'go:description', content: 'Contactez pour nous parler de votre projet digital :) ' },
+      {property: 'go:image', content: 'https://www.mamoot.be/assets/img/Mamoot.png' }
+    ], true);
   }
 
   form = new FormGroup({
@@ -30,7 +48,7 @@ export class ContactComponent implements OnInit {
       Validators.minLength(4)])
   });
 
-  
+
 
 
 

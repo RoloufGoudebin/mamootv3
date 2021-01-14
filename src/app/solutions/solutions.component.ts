@@ -16,6 +16,7 @@ export class SolutionsComponent implements OnInit {
 
     this.meta.addTags([
       {charset: 'UTF-8'},
+      {name: 'language' , content:"fr-BE"},
       {name: 'description', content: 'Mamoot répond à tous vos besoins digitaux: SEO, SEA, sites internet, ERP, CRM, audits, réseaux sociaux et plus encore'},
       {name: 'robots', content: 'index, follow'},
       {name:'viewport', content:'width=device-width, initial-scale=1'},
@@ -28,7 +29,4 @@ export class SolutionsComponent implements OnInit {
       {property: 'go:image', content: 'https://www.mamoot.be/assets/img/Mamoot.png' }
     ], true);
   }
-
   }
-
-}
