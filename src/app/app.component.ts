@@ -23,7 +23,6 @@ export class AppComponent implements OnInit {
       { name: 'og:site_name', content: 'Mamoot' },
       { name: 'og:locale', content: 'fr_be' },
       { name: 'og:type', content: 'website' },
-      { name: 'og:description', content: 'Créations de solutions digitales, stratégies de communication et bien plus encore !' },
       { name: 'og:image', content: 'https://www.mamoot.be/assets/img/Mamoot.png' }
     ], true);
   }
