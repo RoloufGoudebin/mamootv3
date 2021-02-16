@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
+import { FacebookModule } from 'ngx-facebook';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +31,7 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    FacebookModule.forRoot(),
     HttpClientModule
   ],
   providers: [

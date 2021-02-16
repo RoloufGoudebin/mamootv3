@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { FacebookService, InitParams } from 'ngx-facebook';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,11 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class AppComponent implements OnInit {
 
-  constructor( private titleService:Title, private meta:Meta) { }
+  constructor( private titleService:Title, private meta:Meta, private facebookService: FacebookService) { }
 
   ngOnInit(): void {
+
+    this.initFacebookService();
 
     this.titleService.setTitle("Création de site internet & marketing digitale à Waterloo | Mamoot");
 
@@ -25,6 +28,11 @@ export class AppComponent implements OnInit {
       { name: 'og:type', content: 'website' },
       { name: 'og:image', content: 'https://www.mamoot.be/assets/img/open-graphe.jpg' }
     ], true);
+  }
+
+  private initFacebookService(): void {
+    const initParams: InitParams = { xfbml:true, version:'v3.2'};
+    this.facebookService.init(initParams);
   }
 
 

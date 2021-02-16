@@ -15,7 +15,7 @@ export class EnvironnementComponent implements OnInit {
     this.titleService.setTitle("Diminution de notre impact environnemental | Mamoot X Planet");
 
     this.meta.updateTag({ name: 'description', content: 'Le digital et l’utilisation quotidienne des technologies sont de véritables sources polluantes. Nous agissons A travers des petits gestes simples.' }, "name='description'");
-    this.meta.updateTag({ name: 'og:url', content: 'https://www.mamoot.b/environnement' }, "name='og-url'");
+    this.meta.updateTag({ name: 'og:url', content: 'https://www.mamoot.be/environnement' }, "name='og-url'");
     this.meta.updateTag({ name: 'og:description', content: 'Découvrez les gestes quotidiens de Mamoot servant à limiter notre impact environnemental' }, "name='og-description'");
   }g
 }
