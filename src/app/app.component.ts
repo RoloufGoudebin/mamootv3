@@ -15,14 +15,14 @@ export class AppComponent implements OnInit {
 
     this.initFacebookService();
 
-    this.titleService.setTitle("Création de site internet & marketing digitale à Waterloo | Mamoot");
+    this.titleService.setTitle("Création de site internet & marketing digital à Waterloo | Mamoot");
 
     this.meta.addTags([
       { charset: 'UTF-8' },
       { name: 'description', content: 'Découvrez Mamoot une agence créative et ambitieuse. Faites-nous confiance pour la création de votre site web, système de gestion, stratégie et plus encore.' },
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      
+
       { name: 'og:site_name', content: 'Mamoot' },
       { name: 'og:locale', content: 'fr_be' },
       { name: 'og:type', content: 'website' },

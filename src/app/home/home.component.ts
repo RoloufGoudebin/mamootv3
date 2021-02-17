@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(private titleService: Title, private meta: Meta) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle("Création de site internet et marketing digitale à Waterloo | Mamoot");
+    this.titleService.setTitle("Création de site internet et marketing digital à Waterloo | Mamoot");
 
     this.meta.updateTag({ name: 'description', content: 'Découvrez Mamoot une agence créative et ambitieuse. Faites-nous confiance pour la création de votre site web, système de gestion, stratégie et plus encore.' }, "name='description'");
     this.meta.updateTag({ name: 'og:url', content: 'https://www.mamoot.be' },"name='og-url'");
