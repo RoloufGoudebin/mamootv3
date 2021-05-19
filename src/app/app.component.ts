@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.initFacebookService();
 
     this.titleService.setTitle("Création de site internet & marketing digitale à Waterloo | Mamoot");
 
@@ -29,12 +28,6 @@ export class AppComponent implements OnInit {
       { name: 'og:image', content: 'https://www.mamoot.be/assets/img/open-graphe.jpg' }
     ], true);
   }
-
-  private initFacebookService(): void {
-    const initParams: InitParams = { xfbml:true, version:'v3.2'};
-    this.facebookService.init(initParams);
-  }
-
 
   scroll(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth' });
