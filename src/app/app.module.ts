@@ -36,7 +36,11 @@ import { ContactComponent } from './contact/contact.component';
   ],
   providers: [
     Title,
-    Meta
+    Meta,
+    {
+      provide: "isBrowser",
+      useValue: true,
+    },
   ],
   bootstrap: [AppComponent]
 })

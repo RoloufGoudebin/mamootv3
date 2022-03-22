@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { FacebookService, InitParams } from 'ngx-facebook';
+import { Inject } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { FacebookService, InitParams } from 'ngx-facebook';
 })
 export class AppComponent implements OnInit {
 
-  constructor( private titleService:Title, private meta:Meta, private facebookService: FacebookService) { }
+  constructor(@Inject("isBrowser") public enableAnimations: boolean, private titleService:Title, private meta:Meta, private facebookService: FacebookService) { }
 
   ngOnInit(): void {
 

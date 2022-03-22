@@ -12,5 +12,7 @@ import { AppComponent } from './app.component';
     NoopAnimationsModule,
   ],
   bootstrap: [AppComponent],
+  providers: [
+  ]
 })
 export class AppServerModule {}
