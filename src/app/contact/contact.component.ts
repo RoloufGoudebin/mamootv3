@@ -51,7 +51,7 @@ export class ContactComponent implements OnInit {
     console.log(this.formIsValid)
 
 
-    this.http.post("https://mamoot.be/sendmail", user).subscribe(
+    this.http.post("https://europe-west1-resto-moot.cloudfunctions.net/api/sendmail", user).subscribe(
       data => {
         let res: any = data;
         console.log(
